@@ -21,14 +21,47 @@ class CustomerStore {
     this.customerState = customerState;
   }
 
-  setCustomerName(name) {
-    this.customerName = name;
+  getCustomerCode() {
+    return this.customerCode;
+  }
+
+  setCustomerCode(code) {
+    this.customerCode = code;
   }
 
   getCustomerName() {
     return this.customerName;
   }
+
+  setCustomerName(name) {
+    this.customerName = name;
+  }
+
+  getCustomerPhone() {
+    return this.customerPhone;
+  }
+
+  setCustomerPhone(phone) {
+    this.customerPhone = phone;
+  }
+
+  getCustomerCity() {
+    return this.customerCity;
+  }
+
+  setCustomerCity(city) {
+    this.customerCity = city;
+  }
+
+  getCustomerState() {
+    return this.customerState;
+  }
+
+  setCustomerState(state) {
+    this.customerState = state;
+  }
 }
+
 const store = new CustomerStore(
   '1234',
   'Bashir Sidi',
